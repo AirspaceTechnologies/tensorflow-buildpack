@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "-----> Starting tensorflow install.."
+
+BUILD_DIR="$1"
+TF_URL="https://storage.googleapis.com/tensorflow/libtensorflow/libtensorflow-cpu-linux-x86_64-1.8.0.tar.gz"
+
+# download / install
+mkdir $BUILD_DIR/third-party
+curl -L $TF_URL | tar -xz -C $BUILD_DIR/third-party
+
+# setup env
+ENV_DIR="$3"
+ln -sfn $BUILD_DIR/third-party /app/third-party
+
+echo "        Done!"
