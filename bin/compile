@@ -10,7 +10,6 @@ mkdir $BUILD_DIR/third-party
 curl -L $TF_URL | tar -xz -C $BUILD_DIR/third-party
 
 # setup env
-ENV_DIR="$3"
 ln -sfn $BUILD_DIR/third-party /app/third-party
 
 echo "        Done!"
