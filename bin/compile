@@ -3,7 +3,7 @@
 echo "-----> Starting tensorflow install.."
 
 BUILD_DIR="$1"
-TF_URL="https://storage.googleapis.com/tensorflow/libtensorflow/libtensorflow-cpu-linux-x86_64-1.11.0.tar.gz"
+TF_URL="https://storage.googleapis.com/tensorflow/libtensorflow/libtensorflow-cpu-linux-x86_64-1.12.0.tar.gz"
 
 # download / install
 mkdir $BUILD_DIR/third-party
